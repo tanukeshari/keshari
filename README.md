@@ -1,118 +1,245 @@
+<this.table= 'window table';
+
+console.log(window table);
+
+
+
+const cleanTable=function(){
+
+console.log(cleaning ${this.table}`)
+
+
+
+this.garage={
+
+table:'garage table'
+
+cleanTable(){
+
+console.log(cleaning ${this.table}`)
+
+}
+
+};
+
+this.garage.table;
+
+let johnsRoom={
+
+table: ' johns table'
+
+cleanTable(){
+
+console.log(cleaning${ this.table})
+
+};
+
+console.log(this.johnsRoom.table);
+
+table: 'johns table'
+
+};
+
+
+
+
+
+class student{
+
+     static count=0; //static variable to call
+
+     
+
+    constructor(name,age,ph_no,marks){
+
+        this.name=name;
+
+        this.age=age;
+
+        this.ph_no=ph_no;
+
+        this.marks=marks;
+
+        student.countStudent();
+
+    }
+
+    static countStudent(){
+
+        
+
+        return(student.count++); //this is how u access static variable
+
+    }
+
+    eligible(){
+
+        if(this.marks >=40){
+
+            console.log(`${this.name} age ${age} is eligible`);
+
+        }
+
+        else if(this.marks<40){
+
+            console.log(`${this.name} age ${age} is not eligible`);
+
+        }
+
+    }
+
+
+
+
+
+
+
+    
+
+}
+
+const Riya=new student('Riya',18,1234,34);
+
+const Hiya=new student('Hiya',15,2345,35);
+
+const Diya=new student('Diya',16,4567,60);
+
+const Siya=new student('Siya',17,7891,70);
+
+const Rooh=new student('Rooh',19,3456,80);
+
+console.log(student.countStudent());
+
+Riya.eligible();
+
+Hiya.eligible();
+
+Diya.eligible();
+
+Siya.eligible();
+
+Rooh.eligible();
+
+
+
+
+
+
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
   <title>Item Lister</title>
+
 </head>
+
 <body>
+
   <header id="main-header" class="bg-success text-white p-4 mb-3">
+
     <div class="container">
-      <div class="row">
-      <h1 id="header-title">Item Lister</h1>
-      </div>
-       <div class="col-md-6 align-self-center"><input type="text" class ="form-control" id="filter" placeholder="search item......"></div>
-    </div> 
-  </div>
+
+      <h1 id="header-title">Item Lister <span style="display:none">123</span></h1>
+
+    </div>
+
   </header>
+
   <div class="container">
+
    <div id="main" class="card card-body">
+
     <h2 class="title">Add Items</h2>
-    <form  id="addForm" class="form-inline mb-3">
-      <input type="text" class="form-control mr-2"
-      id="items">
-      <input type="submit" class="form-control mr-1" value="Submit">
+
+    <form class="form-inline mb-3">
+
+      <input type="text" class="form-control mr-2">
+
+      <input type="submit" class="btn btn-dark" value="Submit">
+
     </form>
+
     <h2 class="title">Items</h2>
+
     <ul id="items" class="list-group">
-      <li class="list-group-item">Item 1 </li>
-      <li class="list-group-item">Item 2 </li>
-      <li class="list-group-item">Item 3 </li>
-      <li class="list-group-item">Item 4 </li>
+
+      <li style="color:green" class="list-group-item">
+
+        Item 1</li>
+
+      <li  style =background-color:green  class="list-group-item">Item 2</li>
+
+      <li style="color:green"  class="list-group-item"></li>
+
+      <li style="color:green"  class="list-group-item">Item 4</li>
+
     </ul>
+
    </div>
+
   </div>
-<script>
-// TRAVWESING THE DOM//
-var itemList = document.querySelector('#items');
-// parentNode
-console.log(itemList.parentNode);
-itemList.parentNode.style.backgroundColor='#f4f4f4';
-console.log(itemList.parentNode.parentNode.parentNode);
+
+  <script>
+
+  class Student{
 
 
-// parentElement
-console.log(itemList.parentElement);
-itemList.parentElement.style.backgroundColor='#f4f4f4';
-console.log(itemList.parentElement.parentElement.parentElement);
 
-// childNodes
-console.log(itemList.childNodes);
+    constructor(name,age,marks){
 
-console.log(itemList.children);
-console.log(itemList.children[1]);
-itemList.children.style.backgroundColor='#f4f4f4';
+    this.name=name;
 
-//firstChild
-console.log(itemList.firstChild);
+    this.age=age;
 
-//firstElementChild
-console.log(itemList.firstElementChild);
-itemsList.firstElementChild.textContent ="hello 1";
+    this.marks= marks;
 
-//lastChild
-console.log(itemList.lastChild);
+    }
 
-//lastElementChild
-console.log(itemList.lastElementChild);
-itemsList.lastElementChild.textContent ='hello 4';
-   
+    setplacementAge(minPlacementAge){
 
-// nextsibiling
-console.log(itemList.nextSibling);
+    console.log(this);
 
-//nextElementsibiling
-console.log(itemList. nextElementsibiling);
-itemsList.nextElementsibiling.textContent ='hello 4';
+  return(minMarks)=>{
 
+   console.log('inside eligibleforCurrentCompany', this)
 
-// previoussibiling
-console.log(itemList.previousSibling);
+    
 
-//previousElementsibiling
-console.log(itemList. previousElementsibiling);
-itemsList.previousElementsibiling.style.color='green';
+    if(this.marks>minMarks && this.age>minPlacementAge){
 
-// create a DIV
- 
-  var newDiv= document.createElement('div');
-  // add class
-  newDiv.className=' hello';
+      console.log(this.name+"is ready for placement")
 
-   // add id
+    }
 
-    newDiv.id =' hello1';
+        else{
 
-     // add attribute
+          console.log(this.name+"is not ready for placements")
 
-     newDiv.setAttribute('title', ' hello div');
+        }
 
-     // create text Node
+        }
 
-     var newDivText=document.createTextNode('hello world');
+      }
 
-     // add text to div
+  }
 
-      newDiv.appendChild(newDivText);
+    const  Abc= new Student('abc', 25 , 75);
 
-      var content= document.querySelector('header .container');
-      var h1=document.querySelector('header h1');
-      console.log(newDiv);
+    const  Xyz= new Student('xyz', 13, 35);
 
-       newDiv.style.fontsize='30px';
-       container.insertBefore(newDiv, h1);
+    Rekha.setPlacementAge(18)(40);
+
 </script>
+
 </body>
-</html>
